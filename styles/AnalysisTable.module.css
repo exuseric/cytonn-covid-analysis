@@ -1,0 +1,131 @@
+.analysis {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  border-radius: var(--space-16);
+}
+
+.stack__body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  row-gap: var(--space-8);
+  text-transform: capitalize;
+  font-size: var(--font-size-12);
+}
+
+.column__heading {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+}
+
+.column__heading,
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.table__options {
+  position: sticky;
+  z-index: 2;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+
+.search label {
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-bold);
+}
+
+.search input {
+  border: 1px solid var(--color-gray-4);
+
+  min-width: 20ch;
+  max-width: 60ch;
+  height: var(--space-24);
+  padding-inline: var(--space-8);
+
+  outline-color: var(--color-gray-7);
+}
+
+.search__bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search__bar__btn {
+  border: 1px solid transparent;
+
+  width: var(--space-24);
+  height: var(--space-24);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.table {
+  min-width: 900px;
+  margin-top: var(--space-32);
+}
+.table thead th {
+  border-top: none;
+  border-bottom: none;
+  color: var(--color-gray-9);
+}
+
+.table tbody td,
+.table thead th {
+  color: var(--color-gray-9);
+  padding-block: var(--space-16);
+  text-transform: capitalize;
+  text-align: left;
+  padding-block: var(--space-16);
+  padding-inline: var(--space-8);
+}
+
+.table tbody tr:not(.spacer) {
+  border-radius: 7px;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+.table tbody tr:not(.spacer):hover {
+  -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.1);
+}
+.table tbody tr th,
+.table tbody tr td {
+  background: var(--color-gray-4);
+  border: none;
+  transition: 0.3s all ease;
+}
+
+.table tbody tr.spacer td {
+  padding: 0;
+  height: 3px;
+  border-radius: 0;
+  background: transparent;
+}
+
+.table tbody tr:hover td {
+  color: var(--color-gray-1);
+  background: var(--color-brand);
+}

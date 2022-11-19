@@ -1,0 +1,21 @@
+.container {
+  padding: 0 var(--space-16);
+  max-width: var(--breakpoint-large);
+  margin: var(--space-32) auto;
+}
+
+.main {
+  min-height: 100vh;
+  padding: var(--space-32) 0;
+}
+
+.title {
+  margin: 0;
+  line-height: var(--line-height-small);
+  font-size: var(--font-size-24);
+  text-align: left;
+}
+
+.section {
+  margin-block: var(--space-64);
+}
